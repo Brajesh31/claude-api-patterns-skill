@@ -40,3 +40,7 @@ Choose patterns based on the API's requirements rather than applying every conve
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Supporting resources
+
+Added the missing REST, tRPC, versioning, and API security-testing guides, plus `scripts/api_validator.py`. The validator performs a lightweight static inventory of route declarations. It does not prove that authentication, authorization, or runtime behavior is secure. Run it with `python scripts/api_validator.py <project_path>`.
