@@ -17,12 +17,19 @@ This repository contains a Claude skill for applying consistent API patterns acr
 ```text
 SKILL.md
 api-style.md
-auth.md
-documentation.md
-graphql.md
-rate-limiting.md
+rest.md
 response.md
+graphql.md
+trpc.md
+versioning.md
+auth.md
+rate-limiting.md
+documentation.md
+security-testing.md
+scripts/
+  api_validator.py
 LICENSE
+README.md
 ```
 
 ## Getting Started
@@ -41,13 +48,12 @@ Choose patterns based on the API's requirements rather than applying every conve
 
 MIT. See [LICENSE](LICENSE).
 
-## Supporting resources
+## Supporting Resources
 
-Added the missing REST, tRPC, versioning, and API security-testing guides, plus `scripts/api_validator.py`. The validator performs a lightweight static inventory of route declarations. It does not prove that authentication, authorization, or runtime behavior is secure. Run it with `python scripts/api_validator.py <project_path>`.
+The repository includes REST, tRPC, versioning, and API security-testing guides, plus `scripts/api_validator.py`. The validator performs a lightweight static inventory of route declarations. It does not prove that authentication, authorization, or runtime behavior is secure.
 
-## Additional files
+Run it with:
 
-- `rest.md`, `trpc.md`, `versioning.md`, and `security-testing.md`
-- `scripts/api_validator.py`
-
-The script inventories common route declarations from source files. It is a static helper, not a security scanner.
+```bash
+python scripts/api_validator.py <project_path>
+```
